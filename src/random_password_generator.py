@@ -79,6 +79,7 @@ while cont == "y":
     if save == "s":
         name = input("Give a name to this password: ")
         passwords.write("\n"+name+" : "+password)
+        passwords.close()
         
     while True:
             cont = input("Enter 'y' to generate another password or 'q' to quit: ").lower()
@@ -89,5 +90,4 @@ while cont == "y":
     
     print()
 else:
-    passwords.close()
     print("Thank you for using !")
