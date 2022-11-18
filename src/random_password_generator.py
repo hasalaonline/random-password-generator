@@ -78,7 +78,7 @@ while cont == "y":
     save = input("Enter 's' to save password in text file: ")
     if save == "s":
         name = input("Give a name to this password: ")
-        passwords.write(name+" : "+password+",  ")
+        passwords.write("\n"+name+" : "+password)
         
     while True:
             cont = input("Enter 'y' to generate another password or 'q' to quit: ").lower()
